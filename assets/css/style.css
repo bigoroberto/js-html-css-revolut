@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fl-l{
+  float: left;
+}
+
+.fl-r{
+  float: right;
+}
+
+body{
+  height: 100vh;
+}
+
+header{
+  width: 80%;
+  margin: auto;
+  height: 70px;
+}
+
+header .header-l{
+  width: 40%;
+  height: 70px;
+  float: left;
+  text-align: left;
+  padding: 0 30px;
+}
+
+header .header-r{
+  width: 60%;
+  height: 70px;
+  float: left;
+  text-align: right;
+  padding: 0 30px;
+}
+
+header .header-r ul li a{
+  text-decoration: none;
+  color: black
+}
+
+header .header-l ul,
+header .header-r ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-l ul li,
+header .header-r ul li{
+  position: relative;
+  display: inline;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+header .header-l ul li img{
+  width: 40px;
+}
+
+.dropdown{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  display: none;
+}
+
+
+.dropdown.active{
+  display: flex;
+}
+
+#Features{
+  background-color: blueviolet;
+
+
+}
+
+#Plans{
+  background-color: coral;
+
+}
+
+#About-us{
+  background-color: rgb(65, 34, 23);
+
+}
+
+#Help{
+  background-color: rgb(29, 92, 66);
+
+}
