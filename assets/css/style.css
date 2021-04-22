@@ -1,97 +1,135 @@
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.fl-l{
-  float: left;
-}
-
-.fl-r{
-  float: right;
-}
-
-body{
-  height: 100vh;
-}
-
-header{
-  width: 80%;
-  margin: auto;
-  height: 70px;
-}
-
-header .header-l{
-  width: 40%;
-  height: 70px;
-  float: left;
-  text-align: left;
-  padding: 0 30px;
-}
-
-header .header-r{
-  width: 60%;
-  height: 70px;
-  float: left;
-  text-align: right;
-  padding: 0 30px;
-}
-
-header .header-r ul li a{
-  text-decoration: none;
-  color: black
-}
-
-header .header-l ul,
-header .header-r ul{
+li {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
-header .header-l ul li,
-header .header-r ul li{
-  position: relative;
-  display: inline;
-  line-height: 70px;
-  cursor: pointer;
+a {
+  text-decoration: none;
 }
 
-header .header-l ul li img{
-  width: 40px;
+.menu-container {
+  width: 65%;
+  margin-top: 40px;
 }
 
-.dropdown{
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background-color: blue;
+.logo {
+  width: 100px;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #A0A6AD;
+  padding: 20px;
+}
+
+nav a:hover {
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-left {
+  text-transform: uppercase;
+}
+
+
+.btn {
+  padding-right: 0;
+  border-radius: 30px;
+  background-color: #eb008d;
+  padding: 12px 24px;
+}
+
+.btn:hover {
+  background-color: #D2007E;
+}
+
+a.btn, a.btn:hover {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.menu-right li i {
+  font-size: 7px;
+}
+
+.menu-active {
+  color: #000;
+}
+
+.dropdown {
   display: none;
+  box-shadow: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  transform: translateX(-20%);
+  margin-top: 10px;
 }
 
+.dropdown li:hover {
+  background-color: #F3F4F5;
+}
 
-.dropdown.active{
+.dropdown li:hover a {
+  color: #000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 16px 32px;
+}
+
+.dropdown.active {
+  display: block;
+}
+
+.label {
+  display: block;
+  color: #eb008d;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+  right: -60%;
+}
+
+.label.beta {
+  right: -12%;
+}
+
+/****/
+
+.d-flex {
   display: flex;
 }
 
-#Features{
-  background-color: blueviolet;
-
-
+.jc-center {
+  justify-content: center;
 }
 
-#Plans{
-  background-color: coral;
-
+.jc-end {
+  justify-content: flex-end;
 }
 
-#About-us{
-  background-color: rgb(65, 34, 23);
-
+.fd-row {
+  flex-direction: row;
 }
 
-#Help{
-  background-color: rgb(29, 92, 66);
+.ali-center {
+  align-items: center;
+}
 
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 {
+  flex-grow: 1;
 }
